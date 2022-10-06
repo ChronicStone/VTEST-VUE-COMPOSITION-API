@@ -32,7 +32,7 @@ The project has already been pre-setup, with files predefined for you. Here is t
 - When rendered / destroyed, the toast should have a transition
 - Be careful to type well everything with typescript. Search to properly type provide/inject.
 - Depending on the toast type, the color of the toast should change. See the live example for reference
-
+- The method creating the toast should return a ref with the toast parameters (text, type, ...). When updating any value of this ref, the changes should apply to the toast itself 
 
 ## ABOUT THE PREDEFINED files
 

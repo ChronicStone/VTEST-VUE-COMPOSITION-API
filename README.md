@@ -47,5 +47,8 @@ The project has already been pre-setup, with files predefined for you. Here is t
 #### SRC/CONSTANTS :
 - **injectionKeys.ts:** Place where injection key(s) should be stored & exported. (Beware of typescript implementation here).
 
-![provider-diagram](https://user-images.githubusercontent.com/55083156/198074749-457e8042-9984-434e-8d73-1313bfd81491.jpeg)
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/55083156/198074749-457e8042-9984-434e-8d73-1313bfd81491.jpeg" alt="provider-diagram" height="600" />
+</p>
 

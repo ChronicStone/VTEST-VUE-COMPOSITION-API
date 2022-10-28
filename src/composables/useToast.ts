@@ -1,8 +1,9 @@
 import { inject, ref } from "vue";
-import { Toast } from "./../types";
+import type { Toast } from "./../types";
+import { TOAST_KEY } from "../constants/injectionKeys";
 
 export function useToast() {
-  const toasts: Toast[] = inject("toasts", []);
+  const toasts: Toast[] = inject(TOAST_KEY, []);
 
   function createToast(
     type: Toast["type"] = "INFO",

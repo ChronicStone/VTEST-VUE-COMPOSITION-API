@@ -22,9 +22,10 @@
 
 <script setup lang="ts">
 import { provide, reactive } from "vue";
-import { Toast } from "../types";
+import { TOAST_KEY } from "../constants/injectionKeys";
+import type { Toast } from "../types";
 
 const toasts: Toast[] = reactive([]);
 
-provide("toasts", toasts);
+provide(TOAST_KEY, toasts);
 </script>

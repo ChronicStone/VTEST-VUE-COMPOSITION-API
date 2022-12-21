@@ -7,7 +7,7 @@ export const useToast = () => {
   const toasts = ref([] as ToastArr[])
 
   const showToast = (message: string, bgcolor: string) => {
-    const id = Math.random() * 10000
+    const id: number = Math.random() * 10000
     toasts.value.push({toastmessage: message, bgcolor: bgcolor, id: id})
     timer.value = setTimeout(() => {
       toasts.value = toasts.value.filter( (toast => toast.id !== id))

@@ -6,15 +6,13 @@
                      :key="toast.id.toString()"
                      :id="toast.id.toString()">
                     {{ toast.toastmessage }}
-            </div>
+                </div>
             </transition-group>
         <div class="slots">
             <slot />
         </div>
     </div>
 </template>
-  
-
 
 <script setup lang="ts">
     import { useToast } from '../composables/useToast'
@@ -27,7 +25,7 @@
     provide(showToastSymbol, showToast)
 
 </script>
-  
+
 <style >
     .app-container {
         background-color: #fff;

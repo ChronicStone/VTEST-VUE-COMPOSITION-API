@@ -3,8 +3,8 @@ import {ToastArr} from '../types'
 
 
 export const useToast = () => {
-  const timer = ref(null as any)
-  const toasts = ref([] as ToastArr[])
+  const timer = ref<any>()
+  const toasts = ref<ToastArr[]>([])
 
   const showToast = (message: string, bgcolor: string) => {
     const id: number = Math.random() * 10000

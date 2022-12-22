@@ -3,13 +3,14 @@ import {ToastArr} from '../types'
 
 
 export const useToast = () => {
-  const timer = ref<any>()
+  const timer = ref<ReturnType<typeof setTimeout>>()
   const toasts = ref<ToastArr[]>([])
-
+  
   const showToast = (message: string, bgcolor: string) => {
     const id: number = Math.random() * 10000
     toasts.value.push({toastmessage: message, bgcolor: bgcolor, id: id})
     timer.value = setTimeout(() => {
+      console.log('timer', timer.value)
       toasts.value = toasts.value.filter( (toast => toast.id !== id))
     }, 3000)
   }
